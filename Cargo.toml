@@ -3,6 +3,25 @@ name = "openssh-generic"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Jiahao XU <Jiahao_XU@outlook.com>"]
+
+license = "MIT"
+description = "SSH through OpenSSH"
+repository = "https://github.com/openssh-rust/openssh-generic"
+
+keywords = ["ssh","remote","openssh","orchestration"]
+categories = ["network-programming", "api-bindings"]
+
+exclude = ["ci-target", "*.sh"]
+
+# docs.rs-specific configuration, shamelessly copied from
+# https://stackoverflow.com/a/61417700/8375400.
+#
+# To test locally, use ` ./build_doc.sh`
+[package.metadata.docs.rs]
+# document all features
+all-features = true
+# defines the configuration attribute `docsrs`
+rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]

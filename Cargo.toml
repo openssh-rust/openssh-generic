@@ -25,3 +25,4 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
+tokio = { version = "1", features = [ "process" ] }

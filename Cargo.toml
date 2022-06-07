@@ -26,3 +26,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
 tokio = { version = "1", features = [ "process" ] }
+
+[dev-dependencies]
+tokio = { version = "1", features = [ "full" ] }
+openssh-sftp-client = "0.10.0"
